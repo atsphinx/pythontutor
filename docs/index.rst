@@ -66,3 +66,25 @@ Example
    for key in user_info:
        print(key)
        print(user_info[key])
+
+Directive
+=========
+
+.. rst:directive:: pythontutor
+
+   .. rst:directive:option:: width
+      :type: int
+
+      Width of iframe content.
+      Default value is ``800``.
+
+   .. rst:directive:option:: height
+      :type: int
+
+      Height of iframe content.
+      Default value is ``500``.
+
+   .. rst:directive:option:: alt
+      :type: str | None
+
+      If this is set non-empty string, append text link to pythontutor that runs same code into top of iframe.
