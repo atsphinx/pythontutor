@@ -16,5 +16,13 @@ templates_path = ["_templates"]
 exclude_patterns = ["_build", "Thumbs.db", ".DS_Store"]
 
 # -- Options for HTML output
-html_theme = "alabaster"
+html_theme = "furo"
 html_static_path = ["_static"]
+
+
+# -- Extension configuration
+# atsphinx.mini18n
+mini18n_default_language = "en"
+mini18n_support_languages = ["en", "ja"]
+mini18n_select_lang_label = ""
+mini18n_basepath = "/pythontutor/"

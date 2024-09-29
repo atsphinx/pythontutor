@@ -50,6 +50,7 @@ dev-dependencies = [
     "sphinx-intl",
     "atsphinx-mini18n",
     "beautifulsoup4>=4.12.3",
+    "furo>=2024.8.6",
 ]
 
 [tool.ruff.lint]
