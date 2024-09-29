@@ -12,6 +12,7 @@ extensions = [
     "sphinx.ext.todo",
     "atsphinx.pythontutor",
     "atsphinx.mini18n",
+    "sphinx_revealjs",
 ]
 templates_path = ["_templates", get_mini18n_template_dir()]
 exclude_patterns = ["_build", "Thumbs.db", ".DS_Store"]

@@ -57,6 +57,10 @@ Example
           print(key)
           print(user_info[key])
 
+.. only:: revealjs or dirrevealjs
+
+   .. revealjs-break::
+
 .. pythontutor::
    :width: 800
    :height: 500
