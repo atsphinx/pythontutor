@@ -50,6 +50,7 @@ Example
    .. pythontutor::
       :width: 800
       :height: 500
+      :alt: Example to render key and value of list
 
       user_info = {"user_name": "Taro", "last_name": "Yamada"}
       for key in user_info:
@@ -59,6 +60,7 @@ Example
 .. pythontutor::
    :width: 800
    :height: 500
+   :alt: Example to render key and value of list
 
    user_info = {"user_name": "Taro", "last_name": "Yamada"}
    for key in user_info:
