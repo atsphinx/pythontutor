@@ -14,7 +14,12 @@ class PythonTutor(Directive):  # noqa: D101
     }
 
     def run(self):  # noqa: D102
-        node = nodes.pythontutor()
+        attrs = {
+            "width": self.options.get("width", 800),
+            "height": self.options.get("height", 500),
+            "code": "\n".join(self.content),
+        }
+        node = nodes.pythontutor(**attrs)
         return [
             node,
         ]

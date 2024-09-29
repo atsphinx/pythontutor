@@ -49,6 +49,7 @@ dev-dependencies = [
     "sphinx-autobuild",
     "sphinx-intl",
     "atsphinx-mini18n",
+    "beautifulsoup4>=4.12.3",
 ]
 
 [tool.ruff.lint]

@@ -9,6 +9,7 @@ release = version
 # -- General configuration
 extensions = [
     "sphinx.ext.todo",
+    "atsphinx.pythontutor",
 ]
 templates_path = ["_templates"]
 exclude_patterns = ["_build", "Thumbs.db", ".DS_Store"]
