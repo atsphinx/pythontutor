@@ -15,6 +15,11 @@ extensions = [
 templates_path = ["_templates"]
 exclude_patterns = ["_build", "Thumbs.db", ".DS_Store"]
 
+# -- Options for linkcheck
+linkcheck_anchors_ignore = [
+    "^code=.+",
+]
+
 # -- Options for HTML output
 html_theme = "furo"
 html_static_path = ["_static"]
