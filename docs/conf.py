@@ -10,6 +10,7 @@ release = version
 extensions = [
     "sphinx.ext.todo",
     "atsphinx.pythontutor",
+    "atsphinx.mini18n",
 ]
 templates_path = ["_templates"]
 exclude_patterns = ["_build", "Thumbs.db", ".DS_Store"]
