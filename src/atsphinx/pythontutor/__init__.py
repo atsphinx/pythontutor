@@ -4,7 +4,7 @@ from sphinx.application import Sphinx
 
 from . import directives, nodes
 
-__version__ = "0.0.0"
+__version__ = "0.1.0"
 
 
 def setup(app: Sphinx):  # noqa: D103

@@ -1,6 +1,6 @@
 [project]
 name = "atsphinx-pythontutor"
-version = "0.0.0"
+version = "0.1.0"
 description = "Embedding iframe from https://pythontutor.com"
 authors = [{name = "Kazuya Takei", email = "myself@attakei.net"}]
 license = "Apache-2.0"
