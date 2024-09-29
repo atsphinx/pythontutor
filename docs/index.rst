@@ -5,22 +5,37 @@ atsphinx-pythontutor
 Overview
 ========
 
-.. todo:: Write it
+This is Sphinx-extension to embed iframe content of `PythonTutor <https://pythontutor.com>`_.
+
+It is useful to explain code behavior as tutorial document of python in Sphinx doc.
 
 Installation
 ============
 
-.. todo:: Write it
+.. code:: console
+
+   pip install atsphinx-pythontutor
 
 Usage
 =====
 
-.. todo:: Write it
+Set extension into your ``conf.py`` of document.
 
-Configuration
-=============
+.. code:: python
 
-.. todo:: Write it
+   extensions = [
+       ...,
+       "atsphinx.pythontutor",
+   ]
+
+
+Write content into your document by ``pythontutor`` directive.
+
+.. code:: rst
+
+   .. pythontutor::
+
+      # Write your code
 
 Example
 =======
@@ -31,7 +46,7 @@ Example
       :width: 800
       :height: 500
 
-      user_info = {'user_name': 'taro', 'last_name': 'Yamada'}
+      user_info = {"user_name": "Taro", "last_name": "Yamada"}
       for key in user_info:
           print(key)
           print(user_info[key])
@@ -40,7 +55,7 @@ Example
    :width: 800
    :height: 500
 
-   user_info = {'user_name': 'taro', 'last_name': 'Yamada'}
+   user_info = {"user_name": "Taro", "last_name": "Yamada"}
    for key in user_info:
        print(key)
        print(user_info[key])
