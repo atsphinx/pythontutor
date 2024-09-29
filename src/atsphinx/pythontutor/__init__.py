@@ -2,7 +2,7 @@
 
 from sphinx.application import Sphinx
 
-from . import nodes
+from . import directives, nodes
 
 __version__ = "0.0.0"
 
@@ -12,6 +12,7 @@ def setup(app: Sphinx):  # noqa: D103
         nodes.pythontutor,
         html=(nodes.visit_pythontutor, nodes.depart_pythontutor),
     )
+    app.add_directive("pythontutor", directives.PythonTutor)
     return {
         "version": __version__,
         "env_version": 1,
