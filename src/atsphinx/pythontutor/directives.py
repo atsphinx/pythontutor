@@ -1,5 +1,7 @@
 """Definition of directives."""
 
+from urllib.parse import quote
+
 from docutils.parsers.rst import Directive, directives  # type:ignore
 
 from . import nodes
@@ -17,7 +19,7 @@ class PythonTutor(Directive):  # noqa: D101
         attrs = {
             "width": self.options.get("width", 800),
             "height": self.options.get("height", 500),
-            "code": "\n".join(self.content),
+            "code": quote("\n".join(self.content), safe="/',"),
         }
         node = nodes.pythontutor(**attrs)
         return [
