@@ -2,6 +2,11 @@
 atsphinx-pythontutor
 ====================
 
+.. toctree::
+   :hidden:
+
+   changes
+
 Overview
 ========
 
